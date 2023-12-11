@@ -1,5 +1,6 @@
 package com.hooperdevelopment.electoralSytem.controllers;
 
+import com.hooperdevelopment.electoralSytem.dao.ElectorDao;
 import com.hooperdevelopment.electoralSytem.models.Elector;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
