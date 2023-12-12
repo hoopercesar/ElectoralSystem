@@ -2,11 +2,13 @@ package com.hooperdevelopment.electoralSytem.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 @Entity
 @Table(name="electores")
 public class Elector {
 
+    private Long id;
     private String nombre;
     private String correo;
     private String rut;
@@ -14,6 +16,17 @@ public class Elector {
     private String comuna;
     private String candidato;
     private String informacion;
+
+    @Column(name="id")
+    @Id
+    public Long getId() {
+        return id;
+    }
+    @Column(name="id")
+    @Id
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     @Column(name="nombre")
     public String getNombre() {
